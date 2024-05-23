@@ -1,69 +1,90 @@
-    %%%% 和文用 %%%%%
-    \usepackage{bxdpx-beamer}
-    \usepackage{pxjahyper}
-    \usepackage{minijs}%和文用
-    \renewcommand{\kanjifamilydefault}{\gtdefault}%和文用
-    \renewcommand\thefootnote{\arabic{footnote}}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%
-    %% usepackage 群
-    %%%%%%%%%%%%%%%%%%%%%%%%%%
-    \usepackage{amsmath,bm} %多次元空間ベクトルRを表記するのに必要
-    \usepackage{amsfonts}
-    \usepackage{ascmac,color} %枠付き文章を表記するのに必
-    \usepackage{amssymb}
-    \usepackage{tcolorbox}
-    \usepackage{multicol}
-    \usepackage{wasysym}
-    \usepackage{subfigure}
-    \usepackage{wrapfig}
-    \usepackage[labelformat=empty,labelsep=none]{caption}
+%%%% 和文用 %%%%%
+\usepackage{bxdpx-beamer}
+\usepackage{pxjahyper}
+\usepackage{minijs}%和文用
+\renewcommand{\kanjifamilydefault}{\gtdefault}%和文用
+\renewcommand\thefootnote{\arabic{footnote}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% usepackage 群
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath,bm} %多次元空間ベクトルRを表記するのに必要
+\usepackage{amsfonts}
+\usepackage{ascmac,color} %枠付き文章を表記するのに必
+\usepackage{amssymb}
+\usepackage{tcolorbox}
+\usepackage{multicol}
+\usepackage{wasysym}
+\usepackage{subfigure}
+\usepackage{wrapfig}
+\usepackage[labelformat=empty,labelsep=none]{caption}
 
-    
-    % \mathbb{R}^{l} %表記例
-    % \usepackage{algorithm}
-    % \usepackage{algorithmicx}
-    % \usepackage{algpseudocode}
-    
-    %%%% スライドの見た目 %%%%%
-    % \usetheme{Madrid}  
-    % \usecolortheme{crane} 
-    \usetheme{Singapore}
-    \usecolortheme{rose} 
-    % \useoutertheme[subsection=false]{tree}%ヘッダーにセクション表示
-    \usefonttheme{professionalfonts}
-    \useinnertheme{circles} % 箇条書きをシンプルに
-    
-    %\setbeamercovered{transparent}%消えている文字をうっすらと表示
-    \setbeamertemplate{footline}[frame number]%フッターをページ番号だけに
-    \setbeamerfont{title}{series=\bfseries}
-    \setbeamerfont{footline}{size=\scriptsize}%ページ番号小さく
-    \setbeamerfont{frametitle}{size=\large}%フレームタイトルちょい小さく
-    \setbeamerfont{frametitle}{series=\bfseries}
-    \setbeamertemplate{frametitle}{\raggedright\insertframetitle}
-    \setbeamercolor{footline}{bg=black }%ページ番号を太く
-    \setbeamersize{text margin left=.75zw, text margin right=.75zw}%スライドの横の空白を調節
-    \setbeamertemplate{blocks}[rounded] % Blockの影を消す
-    \setbeamertemplate{enumerate items}[default]%enumerate環境のitemを見やすくする
-    \setbeamertemplate{section in toc}[square]%outlineのボールを四角に
-    \setbeamertemplate{navigation symbols}{}%右下のアイコンを消す
-    \setbeamertemplate{navigation symbols}{} % ナビゲーションバー非表示
-    %%%%
-    
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %%いろいろ便利なもの
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \usepackage{here} %[hbtp]の代わりに[H]と書きこむと強制的にその場所に図や表を挿入する
-    \usepackage{bm}
-    \usepackage{ulem}
-    \usepackage{mathtools}
-    %\usepackage{caption}
-    %\captionsetup[figure]{font = footnotesize}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %%newcommand群
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \newcommand{\argmax}{\mathop{\rm arg~max}\limits}
-    \newcommand{\argmin}{\mathop{\rm arg~min}\limits}
-    \newcommand{\mbf}[1]{\mbox{\boldmath $#1$}}
-    % \newcommand{\C}{\hat{\bm{\mathcal{C}}}}
-    % \newcommand{\calS}{\bm{\mathcal{S}}}
-    % \newcommand{\rmvec}{\mathrm{vec}}
+
+% \mathbb{R}^{l} %表記例
+% \usepackage{algorithm}
+% \usepackage{algorithmicx}
+% \usepackage{algpseudocode}
+
+%%%% スライドの見た目 %%%%%
+% \usetheme{Madrid}  
+% \usecolortheme{crane} 
+\usetheme{Singapore}
+\usecolortheme{rose} 
+% \useoutertheme[subsection=false]{tree}%ヘッダーにセクション表示
+\usefonttheme{professionalfonts}
+\useinnertheme{circles} % 箇条書きをシンプルに
+
+%\setbeamercovered{transparent}%消えている文字をうっすらと表示
+\setbeamertemplate{footline}[frame number]%フッターをページ番号だけに
+\setbeamerfont{title}{series=\bfseries}
+\setbeamerfont{footline}{size=\scriptsize}%ページ番号小さく
+\setbeamerfont{frametitle}{size=\large}%フレームタイトルちょい小さく
+\setbeamerfont{frametitle}{series=\bfseries}
+\setbeamertemplate{frametitle}{\raggedright\insertframetitle}
+\setbeamercolor{footline}{bg=black }%ページ番号を太く
+\setbeamersize{text margin left=.75zw, text margin right=.75zw}%スライドの横の空白を調節
+\setbeamertemplate{blocks}[rounded] % Blockの影を消す
+\setbeamertemplate{enumerate items}[default]%enumerate環境のitemを見やすくする
+\setbeamertemplate{section in toc}[square]%outlineのボールを四角に
+\setbeamertemplate{navigation symbols}{}%右下のアイコンを消す
+\setbeamertemplate{navigation symbols}{} % ナビゲーションバー非表示
+%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%いろいろ便利なもの
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{here} %[hbtp]の代わりに[H]と書きこむと強制的にその場所に図や表を挿入する
+\usepackage{bm}
+\usepackage{ulem}
+\usepackage{mathtools}
+%\usepackage{caption}
+%\captionsetup[figure]{font = footnotesize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%newcommand群
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\argmax}{\mathop{\rm arg~max}\limits}
+\newcommand{\argmin}{\mathop{\rm arg~min}\limits}
+\newcommand{\mbf}[1]{\mbox{\boldmath $#1$}}
+% \newcommand{\C}{\hat{\bm{\mathcal{C}}}}
+% \newcommand{\calS}{\bm{\mathcal{S}}}
+% \newcommand{\rmvec}{\mathrm{vec}}
+
+%%% newcommand/environment %%%
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+\newcommand{\black}[1]{\textcolor{black}{#1}}
+\newcommand{\argmax}{\mathop{\rm arg~max}\limits}
+\newcommand{\argmin}{\mathop{\rm arg~min}\limits}
+\newcommand{\myfigure}[2]{\begin{figure}[h]\center\includegraphics[scale=#1]{figures/#2}\end{figure}}
+\newcommand{\mycapfigure}[3]{\begin{figure}[h]\center\includegraphics[scale=#1]{#2}\caption{#3}\end{figure}}
+\newcommand{\vs}{\vspace{10pt}}
+\newcommand{\cl}{:\ }
+\newcommand{\ra}{$\rightarrow$\ }
+\newcommand{\la}{$\leftarrow$}
+\newcommand{\Ra}{$\Rightarrow$\ }
+\newcommand{\La}{$\Leftarrow$}
+\newcommand{\ua}{$\uparrow$}
+\newcommand{\Ua}{$\Uparrow$}
+\newcommand{\da}{$\downarrow$}
+\newcommand{\Da}{$\Downarrow$}
+\renewcommand{\baselinestretch}{1.3}
