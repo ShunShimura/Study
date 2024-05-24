@@ -9,3 +9,4 @@
 *.dvi
 
 section/*.tex
+.DS_Store
